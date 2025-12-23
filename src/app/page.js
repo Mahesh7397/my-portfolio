@@ -55,10 +55,11 @@ const skillGroups = [
     ],
   },
   {
-    title: 'Database',
+    title: 'Database & Other',
     skills: [
       'MongoDB',
       'Firebase',
+      'Git & Github'
     ],
   },
 ];
