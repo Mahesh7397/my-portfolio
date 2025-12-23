@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Image } from '@react-three/drei'
-import * as THREE from 'three'
+
 
 const Dpos=[
   [-2.8, 10.0, -3.6],

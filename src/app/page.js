@@ -41,13 +41,14 @@ const skillGroups = [
       'React Three Fiber / Three.js',
       'Framer Motion',
       'Tailwind CSS',
-      'WebGL basics',
+      'React js',
     ],
   },
   {
     title: 'Backend & Cloud',
     skills: [
       'Node.js',
+      'Express.js',
       'Python',
       'AWS EC2',
       'JWT & Role-based Auth',
@@ -57,7 +58,6 @@ const skillGroups = [
     title: 'Database',
     skills: [
       'MongoDB',
-      'MySQL',
       'Firebase',
     ],
   },
@@ -66,41 +66,56 @@ const skillGroups = [
 
 const projects = [
   {
-    title: 'Remote Gamepad App',
+    title: 'LearnEzily – Smart Learning Platform',
     description:
-      'A wireless controller app with real-time input and a 3D-styled interface.',
-    tech: ['React Native', 'WebSockets', 'Three.js'],
-    github: 'https://github.com/yourusername/remote-gamepad',
-    live: 'https://your-live-demo.com',
+      'A modern e-learning platform designed for effortless learning. It offers interactive courses, personalized dashboards, and real-time progress tracking to make education accessible and engaging for everyone.',
+    tech: ['React js with vite', 'Radix ui'],
+    github: 'https://github.com/Mahesh7397/LearnEzily-web',
+    live: 'https://learnezily.app',
   },
   {
-    title: 'Next.js Role-Based Routing',
+
+    title: 'LearnEzily API – Scalable Backend Service',
     description:
-      'Secure authentication system with dashboards for different user roles.',
-    tech: ['Next.js', 'JWT', 'Node.js'],
-    github: 'https://github.com/yourusername/nextjs-role-auth',
+      'A robust backend API powering the LearnEzily platform, deployed on AWS EC2 for high availability and performance. It includes secure authentication, optimized endpoints, and production-ready configurations for seamless integration with the web app.',
+    tech: ['Mongo DB', 'JWT', 'Express.js','AWS (EC2,S3)'],
+    github: 'https://github.com/Mahesh7397/LearnEzily-api',
   },
   {
-    title: '3D Interactive UI (R3F)',
+    title: 'Personal Portfolio – Showcase of Projects & Skills',
     description:
-      'Animated 3D scenes with lighting, camera controls, and custom models.',
-    tech: ['React Three Fiber', 'Three.js', 'Framer Motion'],
-    github: 'https://github.com/yourusername/r3f-ui',
-    live: 'https://your-3d-ui-demo.com',
+      'A responsive and modern portfolio website designed to highlight your projects, technical skills, and achievements. Built with a clean UI, smooth navigation, and optimized performance for an engaging user experience.',
+    tech: ['React Three Fiber', 'Three.js', 'Framer Motion','Next.js'],
+    github: 'https://github.com/Mahesh7397/my-portfolio',
+    live: '',
   },
   {
-    title: 'Zoho Cliq Task Bot',
+    title: 'Zoho Cliq Task Bot – Automated Task Management',
     description:
-      'Automated task assignment system with bot notifications.',
+      'A smart bot built for Zoho Cliq to automate task assignments and send real-time notifications. Designed for the Cliqtrix contest, it streamlines team collaboration by reducing manual effort and improving productivity through intelligent automation.',
     tech: ['Deluge', 'Zoho Cliq', 'Automation'],
-    github: 'https://github.com/yourusername/zoho-cliq-bot',
+    github: 'https://github.com/Mahesh7397/Zoho-Project',
   },
   {
-    title: 'EC2 Backend Deployment',
+    title: 'SmartStudy – Mobile Learning App',
     description:
-      'Production-ready backend deployment using Nginx, PM2, and MongoDB.',
-    tech: ['AWS EC2', 'Nginx', 'PM2', 'MongoDB'],
-    github: 'https://github.com/yourusername/ec2-backend-setup',
+      'A feature-rich mobile application designed for interactive and personalized learning experiences. Similar to LearnEzily, SmartStudy offers course management, progress tracking, and an intuitive UI optimized for mobile devices, making education accessible on the go.',
+    tech: [ 'React-Native', 'Tailwind'],
+    github: 'https://github.com/Mahesh7397/smartstudy-mobile',
+  },
+   {
+    title: 'Notes App – Simple ',
+    description:
+      'My first React Native project, a lightweight and user-friendly notes application. It allows users to create, edit, and manage notes seamlessly with a clean interface and smooth performance, perfect for learning and practicing mobile development fundamentals.',
+    tech: [ 'React-Native', 'Asynchronous Storage'],
+    github: 'https://github.com/Mahesh7397/Notes',
+  },
+     {
+    title: 'Memusic – Simple Music Streaming App ',
+    description:
+      'A lightweight music application built after learning React Native, featuring a custom backend that collects music data through web scraping in JavaScript. Designed for smooth playback and an intuitive interface, Memusic demonstrates skills in mobile development, backend integration, and data scraping.',
+    tech: [ 'React-Native', 'Asynchronous Storage','MongoDB','React js','Express js'],
+    github: 'https://github.com/Mahesh7397/memusic-webpage',
   },
 ];
 
@@ -252,7 +267,7 @@ export default function Home() {
           </AnimatePresence>
         </header>
         <section id="home" className="home" style={{ width: "100%", height: "100vh", position: "relative" }}>
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-950/30  to-background/20" />
+          <div className="absolute inset-0 bg-linear-to-b from-blue-950/30  to-background/20" />
           <div className="relative z-10 flex min-h-screen items-center justify-center px-6">
             <div className="max-w-4xl text-center  bg-white/2 border rounded-2xl p-8 md:p-12 ">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
